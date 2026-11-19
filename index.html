@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase | Your Journey, Your Freedom</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Ease</span></a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="vehicles.html" class="nav-button">Explore Rides</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR RIDE. YOUR RULES.</p>
+        <h1>Your journey.<br><span>Your freedom.</span></h1>
+        <p class="hero-description">
+          Find the perfect ride for every journey. Explore our collection
+          of cars, bikes and scooters, and travel your way.
+        </p>
+        <div class="hero-actions">
+          <a href="vehicles.html" class="btn btn-primary">Explore Vehicles</a>
+          <a href="#about" class="btn btn-outline">Discover DriveEase</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=85"
+          alt="Premium sports car"
+        >
+        <div class="hero-image-overlay"></div>
+        <div class="hero-image-label">
+          <span>DRIVE YOUR WAY</span>
+          <strong>Freedom starts here.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-item">
+        <h2>50<span>+</span></h2>
+        <p>Vehicles</p>
+      </div>
+      <div class="stat-item">
+        <h2>24<span>/</span>7</h2>
+        <p>Customer Support</p>
+      </div>
+      <div class="stat-item">
+        <h2>100<span>%</span></h2>
+        <p>Convenience</p>
+      </div>
+    </section>
+
+    <section class="home-search-section">
+      <div class="section-heading">
+        <p class="eyebrow">START YOUR JOURNEY</p>
+        <h2>Find your next ride</h2>
+        <p>Choose your vehicle and preferred pickup details.</p>
+      </div>
+
+      <form id="home-search-form" class="home-search-form">
+        <div class="form-field">
+          <label for="vehicle-type">Vehicle type</label>
+          <select id="vehicle-type" required>
+            <option value="">Select vehicle</option>
+            <option value="car">Cars</option>
+            <option value="bike">Bikes</option>
+            <option value="scooter">Scooters</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="pickup-location">Pickup location</label>
+          <input
+            type="text"
+            id="pickup-location"
+            placeholder="Enter your location"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="pickup-date">Pickup date</label>
+          <input type="date" id="pickup-date" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary search-submit">
+          Search Rides
+        </button>
+      </form>
+    </section>
+
+    <section class="categories-section">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+        <h2>Choose your ride</h2>
+        <p>Whatever the journey, we have a ride for you.</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="vehicles.html?type=car" class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85"
+            alt="Car"
+          >
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>01 / FOUR WHEELS</span>
+            <h3>Cars</h3>
+            <p>Comfort for every journey</p>
+            <strong>Explore Cars ↗</strong>
+          </div>
+        </a>
+
+        <a href="vehicles.html?type=bike" class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85"
+            alt="Motorcycle"
+          >
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>02 / TWO WHEELS</span>
+            <h3>Bikes</h3>
+            <p>Feel the freedom of the road</p>
+            <strong>Explore Bikes ↗</strong>
+          </div>
+        </a>
+
+        <a href="vehicles.html?type=scooter" class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=1000&q=85"
+            alt="Scooter"
+          >
+          <div class="category-overlay"></div>
+          <div class="category-content">
+            <span>03 / CITY RIDES</span>
+            <h3>Scooters</h3>
+            <p>Easy rides around the city</p>
+            <strong>Explore Scooters ↗</strong>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-visual">
+        <img
+          src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85"
+          alt="Car on an open road"
+        >
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">ABOUT DRIVE EASE</p>
+        <h2>More than a ride.<br><span>It's your freedom.</span></h2>
+        <p>
+          DriveEase makes getting around simpler. Whether you need a car
+          for a trip, a bike for an adventure or a scooter for everyday
+          travel, our goal is to make your rental experience convenient
+          and straightforward.
+        </p>
+        <a href="vehicles.html" class="btn btn-primary">Find Your Ride</a>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <p class="eyebrow">READY WHEN YOU ARE</p>
+      <h2>Your next journey starts here.</h2>
+      <p>Explore our vehicles and find the ride that suits you.</p>
+      <a href="vehicles.html" class="btn btn-primary">Browse Vehicles</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="logo">Drive<span>Ease</span></a>
+        <p class="footer-description">
+          Your journey, your freedom. Find the right ride for every road.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="#about">About Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Vehicle Categories</h4>
+        <a href="vehicles.html?type=car">Cars</a>
+        <a href="vehicles.html?type=bike">Bikes</a>
+        <a href="vehicles.html?type=scooter">Scooters</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <p>Customer Support</p>
+        <p>Available 24/7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DriveEase. All rights reserved.</p>
+      <p>Designed for your journey.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

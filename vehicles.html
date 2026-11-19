@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicles | DriveEase</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Drive<span>Ease</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="vehicles.html" class="active">Vehicles</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a href="index.html" class="nav-button">Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="listing-hero">
+      <div class="listing-hero-content">
+        <p class="eyebrow">THE DRIVE EASE COLLECTION</p>
+        <h1>Find your <span>perfect ride.</span></h1>
+        <p>
+          From everyday city rides to comfortable road trips,
+          discover a vehicle that fits your journey.
+        </p>
+      </div>
+      <div class="listing-hero-decoration">DRIVE<br>EASE.</div>
+    </section>
+
+    <section class="vehicle-search-section">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE THE COLLECTION</p>
+        <h2>Our vehicles</h2>
+        <p>Browse, compare and choose your next ride.</p>
+      </div>
+
+      <div class="filter-panel">
+        <div class="filter-top">
+          <div class="category-tabs" id="category-tabs">
+            <button class="category-tab active" data-category="all">All Vehicles</button>
+            <button class="category-tab" data-category="car">Cars</button>
+            <button class="category-tab" data-category="bike">Bikes</button>
+            <button class="category-tab" data-category="scooter">Scooters</button>
+          </div>
+        </div>
+
+        <div class="filter-controls">
+          <div class="filter-field search-filter">
+            <label for="vehicle-search">Search vehicles</label>
+            <input
+              type="search"
+              id="vehicle-search"
+              placeholder="Search by vehicle name..."
+            >
+          </div>
+
+          <div class="filter-field">
+            <label for="price-filter">Maximum daily price</label>
+            <select id="price-filter">
+              <option value="all">Any price</option>
+              <option value="500">Up to ₹500</option>
+              <option value="1000">Up to ₹1,000</option>
+              <option value="1500">Up to ₹1,500</option>
+              <option value="2500">Up to ₹2,500</option>
+              <option value="5000">Up to ₹5,000</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="availability-filter">Availability</label>
+            <select id="availability-filter">
+              <option value="all">All statuses</option>
+              <option value="available">Available</option>
+              <option value="booked">Booked</option>
+              <option value="rented">Currently rented</option>
+              <option value="maintenance">Maintenance</option>
+            </select>
+          </div>
+
+          <button type="button" class="reset-btn" id="reset-filters">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+
+      <div class="results-heading">
+        <p id="results-count">Showing vehicles</p>
+        <span>Prices shown per day</span>
+      </div>
+
+      <div class="vehicle-grid" id="vehicle-grid"></div>
+
+      <div class="no-results" id="no-results" hidden>
+        <div class="no-results-icon">⌕</div>
+        <h3>No vehicles found</h3>
+        <p>Try changing your search or filter options.</p>
+        <button class="btn btn-primary" id="no-results-reset">
+          Clear Filters
+        </button>
+      </div>
+    </section>
+
+    <section class="rental-info-section">
+      <div class="rental-info-content">
+        <p class="eyebrow">BEFORE YOU BOOK</p>
+        <h2>A few things to know.</h2>
+        <div class="rental-info-points">
+          <div class="info-point">
+            <span class="info-number">01</span>
+            <div>
+              <h3>Valid documents</h3>
+              <p>Keep your valid driving licence and identity proof ready.</p>
+            </div>
+          </div>
+          <div class="info-point">
+            <span class="info-number">02</span>
+            <div>
+              <h3>Fuel and usage</h3>
+              <p>Fuel expenses are the responsibility of the renter.</p>
+            </div>
+          </div>
+          <div class="info-point">
+            <span class="info-number">03</span>
+            <div>
+              <h3>Return on time</h3>
+              <p>Late returns may attract additional charges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="logo">Drive<span>Ease</span></a>
+        <p class="footer-description">
+          Your journey, your freedom. Find the right ride for every road.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="index.html#about">About Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <a href="vehicles.html?type=car">Cars</a>
+        <a href="vehicles.html?type=bike">Bikes</a>
+        <a href="vehicles.html?type=scooter">Scooters</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <p>Customer Support</p>
+        <p>Available 24/7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DriveEase. All rights reserved.</p>
+      <p>Designed for your journey.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/vehicles.js"></script>
+</body>
+</html>
