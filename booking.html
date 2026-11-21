@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Vehicle | DriveEase</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/partner2.css">
+  <script src="js/booking.js" defer></script>
+</head>
+<body>
+
+  <header class="p2-header">
+    <a href="index.html" class="p2-logo">DriveEase<span>.</span></a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="dashboard.html">My Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="p2-container">
+    <div class="p2-heading">
+      <p class="p2-eyebrow">YOUR JOURNEY STARTS HERE</p>
+      <h1>Book Your <span>Vehicle</span></h1>
+      <p>Complete your details and confirm your rental.</p>
+    </div>
+
+    <div class="booking-layout">
+
+      <section class="p2-panel">
+        <h2>Booking Details</h2>
+
+        <div id="selected-vehicle" class="selected-vehicle">
+          <p>Loading vehicle details...</p>
+        </div>
+
+        <form id="booking-form">
+
+          <h3>Personal Information</h3>
+
+          <div class="p2-field">
+            <label for="customer-name">Full Name</label>
+            <input id="customer-name" type="text"
+              placeholder="Enter your full name" required>
+          </div>
+
+          <div class="p2-two-column">
+            <div class="p2-field">
+              <label for="customer-phone">Phone Number</label>
+              <input id="customer-phone" type="tel"
+                placeholder="10-digit mobile number"
+                pattern="[6-9][0-9]{9}" required>
+            </div>
+
+            <div class="p2-field">
+              <label for="customer-email">Email Address</label>
+              <input id="customer-email" type="email"
+                placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <h3>Rental Period</h3>
+
+          <div class="p2-two-column">
+            <div class="p2-field">
+              <label for="start-date">Pickup Date</label>
+              <input id="start-date" type="date" required>
+            </div>
+
+            <div class="p2-field">
+              <label for="end-date">Return Date</label>
+              <input id="end-date" type="date" required>
+            </div>
+          </div>
+
+          <h3>Pickup & Delivery</h3>
+
+          <div class="p2-field">
+            <label for="pickup-location">Pickup Location</label>
+            <input id="pickup-location" type="text"
+              placeholder="Enter your pickup location" required>
+          </div>
+
+          <div class="p2-field">
+            <label for="delivery-option">Delivery Option</label>
+            <select id="delivery-option" required>
+              <option value="self">Self Pickup - Free</option>
+              <option value="doorstep">Doorstep Delivery - ₹200</option>
+            </select>
+          </div>
+
+          <button type="submit" class="p2-primary-btn">
+            Confirm Booking
+          </button>
+
+          <p class="p2-small-note">
+            This is a demonstration booking system. No real payment will be collected.
+          </p>
+        </form>
+      </section>
+
+      <aside class="p2-panel price-panel">
+        <h2>Price Summary</h2>
+
+        <div class="price-line">
+          <span>Vehicle price / day</span>
+          <strong id="daily-price">₹0</strong>
+        </div>
+
+        <div class="price-line">
+          <span>Rental duration</span>
+          <strong id="rental-days">1 day</strong>
+        </div>
+
+        <div class="price-line">
+          <span>Rental amount</span>
+          <strong id="rental-total">₹0</strong>
+        </div>
+
+        <div class="price-line">
+          <span>Delivery fee</span>
+          <strong id="delivery-fee">₹0</strong>
+        </div>
+
+        <div class="price-line total-line">
+          <span>Total amount</span>
+          <strong id="grand-total">₹0</strong>
+        </div>
+
+        <div class="advance-box">
+          <p>Advance Payment (20%)</p>
+          <h2 id="advance-amount">₹0</h2>
+          <small>Remaining amount is payable later in this demo.</small>
+        </div>
+
+        <p class="p2-small-note">
+          Prices are calculated using the selected vehicle's daily rental rate.
+        </p>
+      </aside>
+
+    </div>
+  </main>
+
+  <div id="confirmation-modal" class="p2-modal" hidden>
+    <div class="p2-modal-content">
+      <div class="success-icon">✓</div>
+      <h2>Booking Confirmed!</h2>
+      <p id="confirmation-message">
+        Your demo booking has been saved successfully.
+      </p>
+      <div id="confirmation-details"></div>
+      <a href="dashboard.html" class="p2-primary-btn">
+        View My Dashboard
+      </a>
+      <a href="vehicles.html" class="p2-secondary-link">
+        Back to Vehicles
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

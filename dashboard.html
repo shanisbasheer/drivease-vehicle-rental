@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard | DriveEase</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/partner2.css">
+  <script src="js/booking.js" defer></script>
+</head>
+<body>
+
+  <header class="p2-header">
+    <a href="index.html" class="p2-logo">DriveEase<span>.</span></a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="dashboard.html">My Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="p2-container">
+    <div class="p2-heading">
+      <p class="p2-eyebrow">YOUR ACCOUNT</p>
+      <h1>My <span>Dashboard</span></h1>
+      <p>Manage your bookings and rental history.</p>
+    </div>
+
+    <section class="dashboard-stats">
+
+      <div class="stat-card">
+        <p>Total Bookings</p>
+        <h2 id="total-bookings">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Upcoming Bookings</p>
+        <h2 id="upcoming-bookings">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <p>Completed Bookings</p>
+        <h2 id="completed-bookings">0</h2>
+      </div>
+
+    </section>
+
+    <section class="p2-panel history-panel">
+      <div class="history-heading">
+        <div>
+          <h2>Booking History</h2>
+          <p>All your saved demo reservations.</p>
+        </div>
+
+        <a href="vehicles.html" class="p2-small-btn">
+          + Book a Vehicle
+        </a>
+      </div>
+
+      <div id="booking-history">
+        <p class="empty-message">Loading bookings...</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
