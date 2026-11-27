@@ -5,7 +5,7 @@ A web-based vehicle rental platform designed to make vehicle discovery and renta
 
 ## 🌐 Live Demo
 
-[Visit DriveEase](https://janisbashir.github.io/DriveEase-vehicle-rental/)
+[Visit DriveEase](https://shanisbasheer.github.io/drivease-vehicle-rental/)
 
 ## 📌 Project Overview
 
